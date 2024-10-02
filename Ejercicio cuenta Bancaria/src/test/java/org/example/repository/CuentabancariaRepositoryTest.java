@@ -36,6 +36,7 @@ class CuentabancariaRepositoryTest {
 
     @org.junit.jupiter.api.Test
     void buscarPorNumeroCuenta() {
+        banco.leerDatos("datos/cuentas.txt");
         try {
             // Métodos de búsqueda
             CuentaBancaria cuenta1 = banco.buscarPorNumeroCuenta("12345");
@@ -51,6 +52,7 @@ class CuentabancariaRepositoryTest {
 
     @org.junit.jupiter.api.Test
     void buscarPorTitular() {
+        banco.leerDatos("datos/cuentas.txt");
         try {
             List<CuentaBancaria> cuentasPorTitular = banco.buscarPorTitular("Juan Perez");
             if (cuentasPorTitular.isEmpty()) {
@@ -67,6 +69,7 @@ class CuentabancariaRepositoryTest {
 
     @org.junit.jupiter.api.Test
     void buscarPorSaldoMayor() {
+        banco.leerDatos("datos/cuentas.txt");
         try {
             List<CuentaBancaria> cuentasSaldoMayor = banco.buscarPorSaldoMayor(1000);
             if (cuentasSaldoMayor.isEmpty()) {
