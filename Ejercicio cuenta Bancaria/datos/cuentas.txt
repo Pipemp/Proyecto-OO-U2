@@ -1,0 +1,4 @@
+Ahorros,12345,Juan Perez,2000.50
+Corriente,54321,Ana Gomez,1500.75
+Ahorros,67890,Jose Martinez,2500.00
+Corriente,98765,Laura Gutierrez,500.25
